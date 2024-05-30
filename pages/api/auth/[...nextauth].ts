@@ -14,6 +14,10 @@ const options = {
       clientSecret: process.env.GITHUB_SECRET,
     }),
   ],
-  adapter: PrismaAdapter(prisma),
+  //adapter: PrismaAdapter(prisma), // Try signing in with a different account.
+//   session: {
+//     // Set to jwt in order to CredentialsProvider works properly
+//     strategy: 'jwt'
+//   },
   secret: process.env.SECRET,
 };
